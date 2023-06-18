@@ -182,18 +182,44 @@
     (function(){
         var choosed = JSON.parse(localStorage.getItem('choosed')) || {};
         console.log(choosed);
+        var getClubDict = function(jsonArray) {
+            var dictionary = {};
+            for (var i = 0; i < jsonArray.length; i++) {
+                var club = jsonArray[i].club;
+                dictionary[club] = 0;
+            }
+            return dictionary;
+        }
+        var clubDict = getClubDict(member);
+        var getMiniClub = function(dictionary) {
+            var minValue = Infinity;
+            var minClub = '';
+
+            for (var key in dictionary) {
+                if (dictionary.hasOwnProperty(key)) {
+                var value = dictionary[key];
+                if (value < minValue) {
+                    minValue = value;
+                    minClub = key;
+                }
+                }
+            }
+
+            return minClub;
+        }
+        console.log(clubDict);
         var speed = function(){
             return [0.1 * Math.random() + 0.01, -(0.1 * Math.random() + 0.01)];
         };
         var getKey = function(item){
-            return item.name + '-' + item.phone;
+            return item.name + '-' + item.club;
         };
         var createHTML = function(){
             var html = [ '<ul>' ];
             member.forEach(function(item, index){
                 item.index = index;
                 var key = getKey(item);
-                var color = choosed[key] ? 'blue' : 'blue';    /* colors assigned to names */
+                var color = 'blue';    /* colors assigned to names */
                 html.push('<li><a href="#" style="color: ' + color + ';">' + item.name + '</a></li>');
             });
             html.push('</ul>');
@@ -202,10 +228,16 @@
         var lottery = function(count){
             var list = canvas.getElementsByTagName('a');
             var color = 'gray';   /* color for names that have already been selected */
+            var miniClub = getMiniClub(clubDict);
             var ret = member
                 .filter(function(m, index){
                     m.index = index;
                     return !choosed[getKey(m)];
+                })
+                .filter(function(m, index){
+                    m.index = index;
+                    console.log(m.club, miniClub, m.club==miniClub)
+                    return m.club==miniClub;
                 })
                 .map(function(m){
                     return Object.assign({
@@ -217,10 +249,12 @@
                 })
                 .slice(0, count)
                 .map(function(m){
-                  choosed[getKey(m)] = 1;
+                  choosed[getKey(m)] = m.club;
+                  clubDict[m.club] += 1;
                   list[m.index].style.color = color;
-                  return m.name + '<br/>' + m.phone; 
+                  return m.name + '<br/>' + m.club; 
                 });
+            console.log(ret);
             localStorage.setItem('choosed', JSON.stringify(choosed));
             return ret;
         };
@@ -262,7 +296,7 @@
                 toggle: function(){
                     if(this.running){
                         TagCanvas.SetSpeed('myCanvas', speed());
-                        var ret = lottery(this.selected);
+                        var ret = lottery(this.selected);                        
                         if (ret.length === 0) {
                             $('#result').css('display', 'block').html('<span>已抽完</span>');
                             return

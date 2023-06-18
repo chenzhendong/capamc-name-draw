@@ -1,1158 +1,1158 @@
 var member = [
   {
     "name": "Claire Yu",
-    "phone": "Growing & Giving"
+    "club": "Growing & Giving"
   },
   {
     "name": "Vicky Shan",
-    "phone": "Growing & Giving"
+    "club": "Growing & Giving"
   },
   {
     "name": "Yanlan Cai",
-    "phone": "Growing & Giving"
+    "club": "Growing & Giving"
   },
   {
     "name": "Sophia Sun",
-    "phone": "Growing & Giving"
+    "club": "Growing & Giving"
   },
   {
     "name": "Larson Ozbun",
-    "phone": "Growing & Giving"
+    "club": "Growing & Giving"
   },
   {
     "name": "Kenneth Shue",
-    "phone": "Growing & Giving"
+    "club": "Growing & Giving"
   },
   {
     "name": "Sophie Huang",
-    "phone": "Growing & Giving"
+    "club": "Growing & Giving"
   },
   {
     "name": "Daphne Wen",
-    "phone": "Growing & Giving"
+    "club": "Growing & Giving"
   },
   {
     "name": "Janet Tian",
-    "phone": "Growing & Giving"
+    "club": "Growing & Giving"
   },
   {
     "name": "Vivien Jiang",
-    "phone": "Growing & Giving"
+    "club": "Growing & Giving"
   },
   {
     "name": "Eunia Zhong",
-    "phone": "Growing & Giving"
+    "club": "Growing & Giving"
   },
   {
     "name": "Justin Jiang",
-    "phone": "Growing & Giving"
+    "club": "Growing & Giving"
   },
   {
     "name": "Kylie Zhang",
-    "phone": "Growing & Giving"
+    "club": "Growing & Giving"
   },
   {
     "name": "Nathan Tian",
-    "phone": "Growing & Giving"
+    "club": "Growing & Giving"
   },
   {
     "name": "Sky Zhang",
-    "phone": "Growing & Giving"
+    "club": "Growing & Giving"
   },
   {
     "name": "Melody Zhou",
-    "phone": "Growing & Giving"
+    "club": "Growing & Giving"
   },
   {
     "name": "Mary Han",
-    "phone": "Growing & Giving"
+    "club": "Growing & Giving"
   },
   {
     "name": "Anderson Tong",
-    "phone": "Growing & Giving"
+    "club": "Growing & Giving"
   },
   {
     "name": "Sophie Shen",
-    "phone": "Growing & Giving"
+    "club": "Growing & Giving"
   },
   {
     "name": "Jenny Yu",
-    "phone": "Growing & Giving"
+    "club": "Growing & Giving"
   },
   {
     "name": "Hongbin Yu",
-    "phone": "Growing & Giving"
+    "club": "Growing & Giving"
   },
   {
     "name": "Cindy Chen",
-    "phone": "Growing & Giving"
+    "club": "Growing & Giving"
   },
   {
     "name": "Rui Zhang",
-    "phone": "Growing & Giving"
+    "club": "Growing & Giving"
   },
   {
     "name": "Cindy Bao",
-    "phone": "Growing & Giving"
+    "club": "Growing & Giving"
   },
   {
     "name": "Ou Sun",
-    "phone": "Growing & Giving"
+    "club": "Growing & Giving"
   },
   {
     "name": "Jane Shue",
-    "phone": "Growing & Giving"
+    "club": "Growing & Giving"
   },
   {
     "name": "Jingfeng Huang",
-    "phone": "Growing & Giving"
+    "club": "Growing & Giving"
   },
   {
     "name": "Jihong Ma",
-    "phone": "Growing & Giving"
+    "club": "Growing & Giving"
   },
   {
     "name": "Jun Zhou",
-    "phone": "Growing & Giving"
+    "club": "Growing & Giving"
   },
   {
     "name": "Joanne Xu",
-    "phone": "Growing & Giving"
+    "club": "Growing & Giving"
   },
   {
     "name": "Chunying Cai",
-    "phone": "Growing & Giving"
+    "club": "Growing & Giving"
   },
   {
     "name": "Yanna Wu",
-    "phone": "Growing & Giving"
+    "club": "Growing & Giving"
   },
   {
     "name": "Zhen Yuan",
-    "phone": "Growing & Giving"
+    "club": "Growing & Giving"
   },
   {
     "name": "E Tian",
-    "phone": "Growing & Giving"
+    "club": "Growing & Giving"
   },
   {
     "name": "Yong Zhang",
-    "phone": "Growing & Giving"
+    "club": "Growing & Giving"
   },
   {
     "name": "Tian Liang",
-    "phone": "Growing & Giving"
+    "club": "Growing & Giving"
   },
   {
     "name": "Yan Wang",
-    "phone": "Growing & Giving"
+    "club": "Growing & Giving"
   },
   {
     "name": "Angela Men",
-    "phone": "Growing & Giving"
+    "club": "Growing & Giving"
   },
   {
     "name": "Vivian Xu",
-    "phone": "Growing & Giving"
+    "club": "Growing & Giving"
   },
   {
     "name": "Mingfei Yu",
-    "phone": "Growing & Giving"
+    "club": "Growing & Giving"
   },
   {
     "name": "Jiyang Jiang",
-    "phone": "Growing & Giving"
+    "club": "Growing & Giving"
   },
   {
     "name": "Yang Shen",
-    "phone": "Growing & Giving"
+    "club": "Growing & Giving"
   },
   {
     "name": "David Xu",
-    "phone": "Youth Service Club"
+    "club": "Youth Service Club"
   },
   {
     "name": "Kenneth Shue",
-    "phone": "Youth Service Club"
+    "club": "Youth Service Club"
   },
   {
     "name": "Ding Yufeng",
-    "phone": "Youth Service Club"
+    "club": "Youth Service Club"
   },
   {
     "name": "Daniel Yi",
-    "phone": "Youth Service Club"
+    "club": "Youth Service Club"
   },
   {
     "name": "David Cao",
-    "phone": "Youth Service Club"
+    "club": "Youth Service Club"
   },
   {
     "name": "Abigail Lu",
-    "phone": "Youth Service Club"
+    "club": "Youth Service Club"
   },
   {
     "name": "Yichi Zhang",
-    "phone": "Youth Service Club"
+    "club": "Youth Service Club"
   },
   {
     "name": "Xiaojun Liang",
-    "phone": "Youth Service Club"
+    "club": "Youth Service Club"
   },
   {
     "name": "Zhen yuan",
-    "phone": "Youth Service Club"
+    "club": "Youth Service Club"
   },
   {
     "name": "June Zhou",
-    "phone": "Youth Service Club"
+    "club": "Youth Service Club"
   },
   {
     "name": "Zhendong Chen",
-    "phone": "Youth Service Club"
+    "club": "Youth Service Club"
   },
   {
     "name": "Lixia Zhang",
-    "phone": "Youth Service Club"
+    "club": "Youth Service Club"
   },  
   {
     "name": "Chaiwey Chen",
-    "phone": "CAPSA"
+    "club": "CAPSA"
   },
   {
     "name": "Michelle Tan",
-    "phone": "CAPSA"
+    "club": "CAPSA"
   },
   {
     "name": "Stanley Xu",
-    "phone": "CAPSA"
+    "club": "CAPSA"
   },
   {
     "name": "Desiree Chen",
-    "phone": "CAPSA"
+    "club": "CAPSA"
   },
   {
     "name": "Wesley Lou",
-    "phone": "CAPSA"
+    "club": "CAPSA"
   },
   {
     "name": "Gloria Jeng",
-    "phone": "CAPSA"
+    "club": "CAPSA"
   },
   {
     "name": "Kevin Wei",
-    "phone": "CAPSA"
+    "club": "CAPSA"
   },
   {
     "name": "Heather Wang",
-    "phone": "CAPSA"
+    "club": "CAPSA"
   },
   {
     "name": "Karen Lou",
-    "phone": "CAPSA"
+    "club": "CAPSA"
   },
   {
     "name": "Zeo Wang",
-    "phone": "CAPSA"
+    "club": "CAPSA"
   },
   {
     "name": "Melinda He",
-    "phone": "CAPSA"
+    "club": "CAPSA"
   },
   {
     "name": "Luowei Li",
-    "phone": "Scholarship"
+    "club": "Scholarship"
   },
   {
     "name": "Peng Xu",
-    "phone": "Scholarship"
+    "club": "Scholarship"
   },
   {
     "name": "Jun Zhou",
-    "phone": "Scholarship"
+    "club": "Scholarship"
   },
   {
     "name": "Qijun Cao",
-    "phone": "Scholarship"
+    "club": "Scholarship"
   },
   {
     "name": "Ou Sun",
-    "phone": "Scholarship"
+    "club": "Scholarship"
   },
   {
     "name": "Allison Fan",
-    "phone": "JRC"
+    "club": "JRC"
   },
   {
     "name": "Leo Fan",
-    "phone": "JRC"
+    "club": "JRC"
   },
   {
     "name": "Alvin Tong",
-    "phone": "JRC"
+    "club": "JRC"
   },
   {
     "name": "Andrew Dai",
-    "phone": "JRC"
+    "club": "JRC"
   },
   {
     "name": "Angie Shen",
-    "phone": "JRC"
+    "club": "JRC"
   },
   {
     "name": "Claire Yu",
-    "phone": "JRC"
+    "club": "JRC"
   },
   {
     "name": "Chaiwey Chen",
-    "phone": "JRC"
+    "club": "JRC"
   },
   {
     "name": "Doris Wang",
-    "phone": "JRC"
+    "club": "JRC"
   },
   {
     "name": "Rachel Wang",
-    "phone": "JRC"
+    "club": "JRC"
   },
   {
     "name": "Eileen Luo",
-    "phone": "JRC"
+    "club": "JRC"
   },
   {
     "name": "Emily Jia",
-    "phone": "JRC"
+    "club": "JRC"
   },
   {
     "name": "Evelyn Shue",
-    "phone": "JRC"
+    "club": "JRC"
   },
   {
     "name": "Hongjin Fang",
-    "phone": "JRC"
+    "club": "JRC"
   },
   {
     "name": "Jessica Zhang",
-    "phone": "JRC"
+    "club": "JRC"
   },
   {
     "name": "Joy Jiang",
-    "phone": "JRC"
+    "club": "JRC"
   },
   {
     "name": "Justin Jiang",
-    "phone": "JRC"
+    "club": "JRC"
   },
   {
     "name": "Mandy Guo",
-    "phone": "JRC"
+    "club": "JRC"
   },
   {
     "name": "Nina Sun",
-    "phone": "JRC"
+    "club": "JRC"
   },
   {
     "name": "Sophie Huang",
-    "phone": "JRC"
+    "club": "JRC"
   },
   {
     "name": "Benson Chan",
-    "phone": "JRC"
+    "club": "JRC"
   },
   {
     "name": "Daniel Li",
-    "phone": "JRC"
+    "club": "JRC"
   },
   {
     "name": "Vicky Shan",
-    "phone": "JRC"
+    "club": "JRC"
   },
   {
     "name": "Henry Fan",
-    "phone": "JRC"
+    "club": "JRC"
   },
   {
     "name": "Yuxin Men",
-    "phone": "JRC"
+    "club": "JRC"
   },
   {
     "name": "Vivian Jiang",
-    "phone": "JRC"
+    "club": "JRC"
   },
   {
     "name": "Vivian Xu",
-    "phone": "JRC"
+    "club": "JRC"
   },
   {
     "name": "Hongbin Yu",
-    "phone": "JRC"
+    "club": "JRC"
   },
   {
     "name": "Qiang Wang",
-    "phone": "JRC"
+    "club": "JRC"
   },
   {
     "name": "Jun Liu",
-    "phone": "JRC"
+    "club": "JRC"
   },
   {
     "name": "Feng Li",
-    "phone": "JRC"
+    "club": "JRC"
   },
   {
     "name": "Jing Zhang",
-    "phone": "JRC"
+    "club": "JRC"
   },
   {
     "name": "Hong Zhao",
-    "phone": "JRC"
+    "club": "JRC"
   },
   {
     "name": "Fengkai Zhang",
-    "phone": "JRC"
+    "club": "JRC"
   },
   {
     "name": "Yanna Wu",
-    "phone": "JRC"
+    "club": "JRC"
   },
   {
     "name": "Xu Zhang",
-    "phone": "JRC"
+    "club": "JRC"
   },
   {
     "name": "Jing Chen",
-    "phone": "JRC"
+    "club": "JRC"
   },
   {
     "name": "Jingfeng Huang",
-    "phone": "JRC"
+    "club": "JRC"
   },
   {
     "name": "David Chan",
-    "phone": "JRC"
+    "club": "JRC"
   },
   {
     "name": "Juliana Gong",
-    "phone": "JRC"
+    "club": "JRC"
   },
   {
     "name": "Zhong Chen",
-    "phone": "JRC"
+    "club": "JRC"
   },
   {
     "name": "Jinping Liu",
-    "phone": "Basketball & Volleyball"
+    "club": "Basketball & Volleyball"
   },
   {
     "name": "Min Li",
-    "phone": "Basketball & Volleyball"
+    "club": "Basketball & Volleyball"
   },
   {
     "name": "Eric Zou",
-    "phone": "Basketball & Volleyball"
+    "club": "Basketball & Volleyball"
   },
   {
     "name": "Ben Ren",
-    "phone": "Basketball & Volleyball"
+    "club": "Basketball & Volleyball"
   },
   {
     "name": "John Liu",
-    "phone": "Basketball & Volleyball"
+    "club": "Basketball & Volleyball"
   },
   {
     "name": "Albert Gao",
-    "phone": "Basketball & Volleyball"
+    "club": "Basketball & Volleyball"
   },
   {
     "name": "Fuller Gao",
-    "phone": "Basketball & Volleyball"
+    "club": "Basketball & Volleyball"
   },
   {
     "name": "Tony Song",
-    "phone": "Basketball & Volleyball"
+    "club": "Basketball & Volleyball"
   },
   {
     "name": "Jason Liang",
-    "phone": "Basketball & Volleyball"
+    "club": "Basketball & Volleyball"
   },
   {
     "name": "Jessie Zou",
-    "phone": "Basketball & Volleyball"
+    "club": "Basketball & Volleyball"
   },
   {
     "name": "Qing Yu",
-    "phone": "RHTC"
+    "club": "RHTC"
   },
   {
     "name": "Weibing Song",
-    "phone": "RHTC"
+    "club": "RHTC"
   },
   {
     "name": "Qiong Yao",
-    "phone": "RHTC"
+    "club": "RHTC"
   },
   {
     "name": "Fengkai Zhang",
-    "phone": "RHTC"
+    "club": "RHTC"
   },
   {
     "name": "Zongyu Zheng",
-    "phone": "RHTC"
+    "club": "RHTC"
   },
   {
     "name": "Ning Guo",
-    "phone": "RHTC"
+    "club": "RHTC"
   },
   {
     "name": "Jean Yuan",
-    "phone": "RHTC"
+    "club": "RHTC"
   },
   {
     "name": "Jessica Zhang",
-    "phone": "RHTC"
+    "club": "RHTC"
   },
   {
     "name": "Jiajing Zheng",
-    "phone": "RHTC"
+    "club": "RHTC"
   },
   {
     "name": "Ellen Bu",
-    "phone": "RHTC"
+    "club": "RHTC"
   },
   {
     "name": "Ivy Li",
-    "phone": "RHTC"
+    "club": "RHTC"
   },
   {
     "name": "Grace Shao",
-    "phone": "RHTC"
+    "club": "RHTC"
   },
   {
     "name": "Faina Song",
-    "phone": "RHTC"
+    "club": "RHTC"
   },
   {
     "name": "Katherine Yao",
-    "phone": "RHTC"
+    "club": "RHTC"
   },
   {
     "name": "Anthea Chu",
-    "phone": "IT"
+    "club": "IT"
   },
   {
     "name": "Andrew Dai",
-    "phone": "IT"
+    "club": "IT"
   },
   {
     "name": "Angie Shen",
-    "phone": "IT"
+    "club": "IT"
   },
   {
     "name": "Kenneth Shue",
-    "phone": "IT"
+    "club": "IT"
   },
   {
     "name": "Kevin Luo",
-    "phone": "IT"
+    "club": "IT"
   },
   {
     "name": "Jessica Zhang",
-    "phone": "IT"
+    "club": "IT"
   },
   {
     "name": "Tony Song",
-    "phone": "IT"
+    "club": "IT"
   },
   {
     "name": "Wesley Lau",
-    "phone": "IT"
+    "club": "IT"
   },
   {
     "name": "Xiaojun Liang",
-    "phone": "IT"
+    "club": "IT"
   },
   {
     "name": "Vivian Xu",
-    "phone": "IT"
+    "club": "IT"
   },
   {
     "name": "Vivian Jiang",
-    "phone": "IT"
+    "club": "IT"
   },
   {
     "name": "Zhendong Chen",
-    "phone": "IT"
+    "club": "IT"
   },
   {
     "name": "Fengkai Zhang",
-    "phone": "IT"
+    "club": "IT"
   },
   {
     "name": "Zhen yuan",
-    "phone": "Board"
+    "club": "Board"
   },
   {
     "name": "Vivian Xu",
-    "phone": "Board"
+    "club": "Board"
   },
   {
     "name": "Vivian Jiang",
-    "phone": "Board"
+    "club": "Board"
   },
   {
     "name": "Fengkai Zhang",
-    "phone": "Board"
+    "club": "Board"
   },
   {
     "name": "Xiaojun Liang",
-    "phone": "Board"
+    "club": "Board"
   },
   {
     "name": "Jingfeng Huang",
-    "phone": "Board"
+    "club": "Board"
   },
   {
     "name": "Jiaye Zeng",
-    "phone": "ITeach"
+    "club": "ITeach"
   },
   {
     "name": "Chris Wang",
-    "phone": "ITeach"
+    "club": "ITeach"
   },
   {
     "name": "Lin Zheng",
-    "phone": "ITeach"
+    "club": "ITeach"
   },
   {
     "name": "Holly Zhang",
-    "phone": "ITeach"
+    "club": "ITeach"
   },
   {
     "name": "Katherine Xu",
-    "phone": "ITeach"
+    "club": "ITeach"
   },
   {
     "name": "Alina Xu",
-    "phone": "ITeach"
+    "club": "ITeach"
   },
   {
     "name": "Hannah Liu",
-    "phone": "ITeach"
+    "club": "ITeach"
   },
   {
     "name": "Matthew Li",
-    "phone": "ITeach"
+    "club": "ITeach"
   },
   {
     "name": "Ava Lu",
-    "phone": "ITeach"
+    "club": "ITeach"
   },
   {
     "name": "Andrew Chen",
-    "phone": "ITeach"
+    "club": "ITeach"
   },
   {
     "name": "Iris Ou",
-    "phone": "ITeach"
+    "club": "ITeach"
   },
   {
     "name": "Anthony Ouyang",
-    "phone": "ITeach"
+    "club": "ITeach"
   },
   {
     "name": "Kaya Zheng",
-    "phone": "ITeach"
+    "club": "ITeach"
   },
   {
     "name": "Victoria Lu",
-    "phone": "ITeach"
+    "club": "ITeach"
   },
   {
     "name": "Victoria Mo",
-    "phone": "ITeach"
+    "club": "ITeach"
   },
   {
     "name": "Yiren Jing",
-    "phone": "ITeach"
+    "club": "ITeach"
   },
   {
     "name": "Stacy Liu",
-    "phone": "ITeach"
+    "club": "ITeach"
   },
   {
     "name": "Angie Shen",
-    "phone": "ITeach"
+    "club": "ITeach"
   },
   {
     "name": "Jerry Jing",
-    "phone": "ITeach"
+    "club": "ITeach"
   },
   {
     "name": "Jesse Jing",
-    "phone": "ITeach"
+    "club": "ITeach"
   },
   {
     "name": "Shaoli Liu",
-    "phone": "ITeach"
+    "club": "ITeach"
   },
   {
     "name": "Vivian Xu",
-    "phone": "ITeach"
+    "club": "ITeach"
   },
   {
     "name": "June Su",
-    "phone": "ITeach"
+    "club": "ITeach"
   },
   {
     "name": "Linda (Victoria lu’s mom)",
-    "phone": "ITeach"
+    "club": "ITeach"
   },
   {
     "name": "Wenjuan Wang",
-    "phone": "ITeach"
+    "club": "ITeach"
   },
   {
     "name": "Haiqing Fu",
-    "phone": "ITeach"
+    "club": "ITeach"
   },
   {
     "name": "Qun Gu",
-    "phone": "ITeach"
+    "club": "ITeach"
   },
   {
     "name": "Huanlai Peng",
-    "phone": "ITeach"
+    "club": "ITeach"
   },
   {
     "name": "Li Li",
-    "phone": "ITeach"
+    "club": "ITeach"
   },
   {
     "name": "Yinqi Zhou",
-    "phone": "ITeach"
+    "club": "ITeach"
   },
   {
     "name": "Hui Zhuang",
-    "phone": "ITeach"
+    "club": "ITeach"
   },
   {
     "name": "Yunxia Tong",
-    "phone": "ITeach"
+    "club": "ITeach"
   },
   {
     "name": "Fan Zheng",
-    "phone": "ITeach"
+    "club": "ITeach"
   },
   {
     "name": "Minling Huang",
-    "phone": "ITeach"
+    "club": "ITeach"
   },
   {
     "name": "Min Wang",
-    "phone": "ITeach"
+    "club": "ITeach"
   },
   {
     "name": "Qiuheng Wang",
-    "phone": "ITeach"
+    "club": "ITeach"
   },
   {
     "name": "Yang Jing",
-    "phone": "ITeach"
+    "club": "ITeach"
   },
   {
     "name": "Aiden Liu",
-    "phone": "Seed"
+    "club": "Seed"
   },
   {
     "name": "Ajay Acharya",
-    "phone": "Seed"
+    "club": "Seed"
   },
   {
     "name": "Alicia Zhang",
-    "phone": "Seed"
+    "club": "Seed"
   },
   {
     "name": "Ana Wang",
-    "phone": "Seed"
+    "club": "Seed"
   },
   {
     "name": "Andrew Dai",
-    "phone": "Seed"
+    "club": "Seed"
   },
   {
     "name": "Andrew Wu",
-    "phone": "Seed"
+    "club": "Seed"
   },
   {
     "name": "Andrew Zhang",
-    "phone": "Seed"
+    "club": "Seed"
   },
   {
     "name": "Brandon Yang",
-    "phone": "Seed"
+    "club": "Seed"
   },
   {
     "name": "Charles Liu",
-    "phone": "Seed"
+    "club": "Seed"
   },
   {
     "name": "Chloe Du",
-    "phone": "Seed"
+    "club": "Seed"
   },
   {
     "name": "Clare Gu",
-    "phone": "Seed"
+    "club": "Seed"
   },
   {
     "name": "Daniel Li",
-    "phone": "Seed"
+    "club": "Seed"
   },
   {
     "name": "Daniel Yin",
-    "phone": "Seed"
+    "club": "Seed"
   },
   {
     "name": "Daphne Wen",
-    "phone": "Seed"
+    "club": "Seed"
   },
   {
     "name": "David Xu",
-    "phone": "Seed"
+    "club": "Seed"
   },
   {
     "name": "Desmond Wharton",
-    "phone": "Seed"
+    "club": "Seed"
   },
   {
     "name": "Devin Chen",
-    "phone": "Seed"
+    "club": "Seed"
   },
   {
     "name": "Doris Wang",
-    "phone": "Seed"
+    "club": "Seed"
   },
   {
     "name": "Eddie Ding",
-    "phone": "Seed"
+    "club": "Seed"
   },
   {
     "name": "Eliana Wang",
-    "phone": "Seed"
+    "club": "Seed"
   },
   {
     "name": "Emily Liu",
-    "phone": "Seed"
+    "club": "Seed"
   },
   {
     "name": "Ethan Chen",
-    "phone": "Seed"
+    "club": "Seed"
   },
   {
     "name": "Ethan Zhang",
-    "phone": "Seed"
+    "club": "Seed"
   },
   {
     "name": "Grace Li",
-    "phone": "Seed"
+    "club": "Seed"
   },
   {
     "name": "Grace Yin",
-    "phone": "Seed"
+    "club": "Seed"
   },
   {
     "name": "Grace Yin",
-    "phone": "Seed"
+    "club": "Seed"
   },
   {
     "name": "Isaac Fan",
-    "phone": "Seed"
+    "club": "Seed"
   },
   {
     "name": "Jadyn Tian",
-    "phone": "Seed"
+    "club": "Seed"
   },
   {
     "name": "Jason Lifei Zhu",
-    "phone": "Seed"
+    "club": "Seed"
   },
   {
     "name": "Jennifer Zhang",
-    "phone": "Seed"
+    "club": "Seed"
   },
   {
     "name": "Jimmy Chen",
-    "phone": "Seed"
+    "club": "Seed"
   },
   {
     "name": "Jinghan Xue",
-    "phone": "Seed"
+    "club": "Seed"
   },
   {
     "name": "Katherine Diao",
-    "phone": "Seed"
+    "club": "Seed"
   },
   {
     "name": "Katherine Xue",
-    "phone": "Seed"
+    "club": "Seed"
   },
   {
     "name": "Katie Hu",
-    "phone": "Seed"
+    "club": "Seed"
   },
   {
     "name": "Kele Zhang",
-    "phone": "Seed"
+    "club": "Seed"
   },
   {
     "name": "Kyle Yin",
-    "phone": "Seed"
+    "club": "Seed"
   },
   {
     "name": "Lefan Wang",
-    "phone": "Seed"
+    "club": "Seed"
   },
   {
     "name": "Logan Liu",
-    "phone": "Seed"
+    "club": "Seed"
   },
   {
     "name": "Louis Hu",
-    "phone": "Seed"
+    "club": "Seed"
   },
   {
     "name": "Lucas Liu",
-    "phone": "Seed"
+    "club": "Seed"
   },
   {
     "name": "Maggie Yao",
-    "phone": "Seed"
+    "club": "Seed"
   },
   {
     "name": "Marilyn Zhang",
-    "phone": "Seed"
+    "club": "Seed"
   },
   {
     "name": "Mason Lim",
-    "phone": "Seed"
+    "club": "Seed"
   },
   {
     "name": "Michelle Zhang",
-    "phone": "Seed"
+    "club": "Seed"
   },
   {
     "name": "Miguel Herrera",
-    "phone": "Seed"
+    "club": "Seed"
   },
   {
     "name": "Ryan Song",
-    "phone": "Seed"
+    "club": "Seed"
   },
   {
     "name": "Samuel Wang",
-    "phone": "Seed"
+    "club": "Seed"
   },
   {
     "name": "Shaun Wang",
-    "phone": "Seed"
+    "club": "Seed"
   },
   {
     "name": "Shengqi Wang",
-    "phone": "Seed"
+    "club": "Seed"
   },
   {
     "name": "Shuai Zhang",
-    "phone": "Seed"
+    "club": "Seed"
   },
   {
     "name": "Sophia Li",
-    "phone": "Seed"
+    "club": "Seed"
   },
   {
     "name": "Sophie Huang",
-    "phone": "Seed"
+    "club": "Seed"
   },
   {
     "name": "Susanna Li",
-    "phone": "Seed"
+    "club": "Seed"
   },
   {
     "name": "Tony Song",
-    "phone": "Seed"
+    "club": "Seed"
   },
   {
     "name": "Wade Cai",
-    "phone": "Seed"
+    "club": "Seed"
   },
   {
     "name": "Yongle Xin",
-    "phone": "Seed"
+    "club": "Seed"
   },
   {
     "name": "Ziyao Zhang",
-    "phone": "Seed"
+    "club": "Seed"
   },
   {
     "name": "Jingfeng Huang",
-    "phone": "Seed"
+    "club": "Seed"
   },
   {
     "name": "Vivian Jiang",
-    "phone": "Seed"
+    "club": "Seed"
   },
   {
     "name": "Jihong Ma",
-    "phone": "Seed"
+    "club": "Seed"
   },
   {
     "name": "Lily Liang",
-    "phone": "Seed"
+    "club": "Seed"
   },
   {
     "name": "Qiang Wang",
-    "phone": "Seed"
+    "club": "Seed"
   },
   {
     "name": "Hui Zhuang",
-    "phone": "Seed"
+    "club": "Seed"
   },
   {
     "name": "Bo Li",
-    "phone": "Seed"
+    "club": "Seed"
   },
   {
     "name": "Lijun Zhang",
-    "phone": "Seed"
+    "club": "Seed"
   },
   {
     "name": "Jie Gong",
-    "phone": "Seed"
+    "club": "Seed"
   },
   {
     "name": "Chunchun Zhang",
-    "phone": "Seed"
+    "club": "Seed"
   },
   {
     "name": "Sophia Li",
-    "phone": "Seed"
+    "club": "Seed"
   },
   {
     "name": "Coach Han",
-    "phone": "Seed"
+    "club": "Seed"
   },
   {
     "name": "Peiqin Zhang",
-    "phone": "Seed"
+    "club": "Seed"
   },
   {
     "name": "Chlora Li",
-    "phone": "Seed"
+    "club": "Seed"
   },
   {
     "name": "Bingbing Wang",
-    "phone": "Seed"
+    "club": "Seed"
   },
   {
     "name": "Xia Bai",
-    "phone": "Seed"
+    "club": "Seed"
   },
   {
     "name": "Qi Lan",
-    "phone": "Seed"
+    "club": "Seed"
   },
   {
     "name": "Rui Zhang",
-    "phone": "Seed"
+    "club": "Seed"
   },
   {
     "name": "Grace Guang",
-    "phone": "Seed"
+    "club": "Seed"
   },
   {
     "name": "Kate Lu",
-    "phone": "Seed"
+    "club": "Seed"
   },
   {
     "name": "Yuan Tian",
-    "phone": "Seed"
+    "club": "Seed"
   },
   {
     "name": "Ying Sun",
-    "phone": "Seed"
+    "club": "Seed"
   },
   {
     "name": "Wen Huang",
-    "phone": "Seed"
+    "club": "Seed"
   },
   {
     "name": "Hui Li",
-    "phone": "Seed"
+    "club": "Seed"
   },
   {
     "name": "Garrett Ding",
-    "phone": "Seed"
+    "club": "Seed"
   },
   {
     "name": "Veronica Kang",
-    "phone": "Seed"
+    "club": "Seed"
   },
   {
     "name": "Ariel La",
-    "phone": "Seed"
+    "club": "Seed"
   },
   {
     "name": "June Zhou",
-    "phone": "PVSA"
+    "club": "PVSA"
   },
   {
     "name": "Yingyun Cai",
-    "phone": "PVSA"
+    "club": "PVSA"
   },
   {
     "name": "Jun Zhou",
-    "phone": "PVSA"
+    "club": "PVSA"
   },
   {
     "name": "Hongbin You",
-    "phone": "PVSA"
+    "club": "PVSA"
   },
   {
     "name": "Yanna Wu",
-    "phone": "PVSA"
+    "club": "PVSA"
   },
   {
     "name": "Hong Tao",
-    "phone": "PVSA"
+    "club": "PVSA"
   },
   {
     "name": "Ada Kwok",
-    "phone": "PVSA"
+    "club": "PVSA"
   },
   {
     "name": "Fang Qian",
-    "phone": "PVSA"
+    "club": "PVSA"
   }
 ]
 
-// Function to shuffle an array randomly
-function shuffleArray(array) {
-  for (var i = array.length - 1; i > 0; i--) {
-    var j = Math.floor(Math.random() * (i + 1));
-    var temp = array[i];
-    array[i] = array[j];
-    array[j] = temp;
-  }
-  return array;
-}
+// // Function to shuffle an array randomly
+// function shuffleArray(array) {
+//   for (var i = array.length - 1; i > 0; i--) {
+//     var j = Math.floor(Math.random() * (i + 1));
+//     var temp = array[i];
+//     array[i] = array[j];
+//     array[j] = temp;
+//   }
+//   return array;
+// }
 
-// Shuffle the 'member' array
-var shuffledMember = shuffleArray(member);
+// // Shuffle the 'member' array
+// var shuffledMember = shuffleArray(member);
 
-// Write the shuffled array to a JSON file
-const fs = require('fs');
-fs.writeFile('member.json', JSON.stringify(shuffledMember), function (err) {
-  if (err) {
-    console.error('Error writing JSON file: ' + err);
-  } else {
-    console.log('member.json file has been created with shuffled member data.');
-  }
-});
+// // Write the shuffled array to a JSON file
+// const fs = require('fs');
+// fs.writeFile('member.json', JSON.stringify(shuffledMember), function (err) {
+//   if (err) {
+//     console.error('Error writing JSON file: ' + err);
+//   } else {
+//     console.log('member.json file has been created with shuffled member data.');
+//   }
+// });
