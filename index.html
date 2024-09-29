@@ -12,6 +12,13 @@
             width: 100%;
             height: 100%;
         }
+        #data-input-section {
+            margin: 20px auto;
+            text-align: center;
+        }
+        .hide {
+            display: none;
+        }
         .result {
             position: absolute;
             top: 50%;
@@ -161,25 +168,32 @@
 
 </div>
 <div id="tools" class="tools">
-     <button
-        v-for="value in btns"
-        @click="onClick(value)"
-        class="hide"
-        :class="{ 'button-error': selected == value}"
-       >{{value}}</button>
+    <button @click="toggleInputSection" class="pure-button button-secondary">导入成员数据</button>
+    <button
+    v-for="value in btns"
+    @click="onClick(value)"
+    class="hide"
+    :class="{ 'button-error': selected == value}"
+    >{{value}}</button>
     <button
        class="pure-button start-button"
        @click="toggle"
        :class="{'button-secondary': !running,
                'button-success': running}">{{running?'停!':'马上抽奖'}}</button>
     <button class="pure-button button-warning" @click="reset">重置</button>
+    <div id="data-input-section" v-show="showInput">
+        <textarea v-model="inputData" rows="10" cols="50" placeholder="Paste your comma-separated data here"></textarea>
+        <br>
+        <button @click="confirmImport" class="pure-button button-success">确定</button>
+        <button @click="cancelImport" class="pure-button button-error">放弃</button>
+    </div>
 </div>
 <script type="text/javascript" src="js/zepto.js"></script>
 <script type="text/javascript" src="js/vue.js"></script>
 <script type="text/javascript" src="js/tagcanvas.js"></script>
-<script type="text/javascript" src="js/member.js"></script>
 <script type="text/javascript">
     (function(){
+        member=[]
         var choosed = JSON.parse(localStorage.getItem('choosed')) || {};
         console.log(choosed);
         var getClubDict = function(jsonArray) {
@@ -268,9 +282,9 @@
             data: {
                 selected: 1,
                 running: false,
-                btns: [
-                    30, 10, 5, 2, 1
-                ]
+                btns: [30, 10, 5, 2, 1],
+                showInput: false,  // Control visibility of the input section
+                inputData: ''      // Store the pasted data
             },
             mounted () {
                 canvas.innerHTML = createHTML();
@@ -299,10 +313,9 @@
                         var ret = lottery(this.selected);                        
                         if (ret.length === 0) {
                             $('#result').css('display', 'block').html('<span>已抽完</span>');
-                            return
+                            return;
                         }
-                        // $('#result').css('display', 'block').html('<span>' + ret.join('</span><span>') + '</span>');
-                         $('#result').css('display', 'block').html('<div class="font35">恭喜获奖人</div><div>' + ret.join('</div>')+'');
+                        $('#result').css('display', 'block').html('<div class="font35">恭喜获奖人</div><div>' + ret.join('</div>')+'');
                         TagCanvas.Reload('myCanvas');
                         setTimeout(function(){
                             localStorage.setItem(new Date().toString(), JSON.stringify(ret));
@@ -314,9 +327,45 @@
                         TagCanvas.SetSpeed('myCanvas', [5, 1]);
                     }
                     this.running = !this.running;
+                },
+                toggleInputSection: function() {
+                    this.showInput = !this.showInput;           
+                },
+                confirmImport: function() {
+                    // Split the input data by new lines and then by commas
+                    let rows = this.inputData.trim().split('\n').map(row => row.split(','));
+
+                    // Check if the first row is a header and remove it if necessary
+                    if (rows[0][0].toLowerCase() === "name" && rows[0][1].toLowerCase() === "club") {
+                        rows.shift();  // Skip the header row
+                    }
+
+                    // Convert the rows into an array of objects for members
+                    let newMembers = rows.map(function(row) {
+                        return { name: row[0].trim(), club: row[1].trim() };
+                    });
+
+                    if (newMembers.length > 0) {
+                        // Update the global `member` array with the new data
+                        window.member = newMembers;
+
+                        // Update the club dictionary as well
+                        clubDict = getClubDict(newMembers);
+
+                        // Recreate the HTML and update the canvas without reloading
+                        document.getElementById('myCanvas').innerHTML = createHTML();
+                        TagCanvas.Reload('myCanvas');
+                    }
+
+                    // Hide the input section
+                    this.showInput = false;
+                },
+                cancelImport: function() {
+                    this.showInput = false;  // Hide input section without changes
                 }
             }
         });
+
     })();
 </script>
 </body>
