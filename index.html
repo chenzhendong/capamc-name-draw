@@ -411,7 +411,6 @@
                         this.showInput = false;  // Hide input section without changes
                     },
 
-                    // 修改后的显示结果方法
                     displayResults() {
                         let allWinners = [];
                         for (let i = 0; i < localStorage.length; i++) {
@@ -422,11 +421,11 @@
                             }
                         }
 
-                        // 使用 alert 显示结果，不包含时间
+                        // 使用 alert 显示结果，包含序号
                         let message = '抽奖结果：\n\n';
-                        allWinners.forEach(winner => {
+                        allWinners.forEach((winner, index) => {
                             let cleanWinner = winner.replace(/<br\s*\/?>/gi, ' ').trim();
-                            message += cleanWinner + '\n';
+                            message += `${index + 1}. ${cleanWinner}\n`;
                         });
                         alert(message);
                     }
