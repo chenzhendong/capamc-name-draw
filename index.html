@@ -188,8 +188,7 @@
         <button @click="cancelImport" class="pure-button button-error">放弃</button>
     </div>
 </div>
-<script type="text/javascript" src="js/zepto.js"></script>
-<script type="text/javascript" src="js/vue.js"></script>
+<script type="text/javascript" src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 <script type="text/javascript" src="js/tagcanvas.js"></script>
 <script type="text/javascript">
     (function(){
@@ -277,63 +276,71 @@
         canvas.width =  0.8 * document.body.offsetWidth ;
         canvas.height = 0.8 * document.body.offsetHeight ;
         document.getElementById('main').appendChild(canvas);
-        new Vue({
-            el: '#tools',
-            data: {
-                selected: 1,
-                running: false,
-                btns: [30, 10, 5, 2, 1],
-                showInput: false,  // Control visibility of the input section
-                inputData: ''      // Store the pasted data
-            },
-            mounted () {
-                canvas.innerHTML = createHTML();
-                TagCanvas.Start('myCanvas', '', {
-                    textColour: null,
-                    initial: speed(),
-                    dragControl: 1,
-                    textHeight: 18
+        const app = Vue.createApp({
+            setup() {
+                const selected = Vue.ref(1);
+                const running = Vue.ref(false);
+                const btns = Vue.ref([30, 10, 5, 2, 1]);
+                const showInput = Vue.ref(false);  // Control visibility of the input section
+                const inputData = Vue.ref('');      // Store the pasted data
+
+                Vue.onMounted(() => {
+                    canvas.innerHTML = createHTML();
+                    TagCanvas.Start('myCanvas', '', {
+                        textColour: null,
+                        initial: speed(),
+                        dragControl: 1,
+                        textHeight: 18
+                    });
                 });
-            },
-            methods: {
-                reset: function(){
+
+                const reset = function(){
                     if(confirm('确定要重置么？所有之前的抽奖历史将被清除！')){
                         localStorage.clear();
                         location.reload(true);
                     }
-                },
-                onClick: function(num){
-                    $('#result').css('display', 'none');
-                    $('#main').removeClass('mask');
-                    this.selected = num;
-                },
-                toggle: function(){
-                    if(this.running){
+                };
+
+                const onClick = function(num){
+                    document.getElementById('result').style.display = 'none';
+                    document.getElementById('main').classList.remove('mask');
+                    selected.value = num;
+                };
+
+                const toggle = function(){
+                    if(running.value){
                         TagCanvas.SetSpeed('myCanvas', speed());
-                        var ret = lottery(this.selected);                        
+                        var ret = lottery(selected.value);                        
                         if (ret.length === 0) {
-                            $('#result').css('display', 'block').html('<span>已抽完</span>');
+                            const resultElement = document.getElementById('result');
+                            resultElement.style.display = 'block';
+                            resultElement.innerHTML = '<span>已抽完</span>';
                             return;
                         }
-                        $('#result').css('display', 'block').html('<div class="font35">恭喜获奖人</div><div>' + ret.join('</div>')+'');
+                        const resultElement = document.getElementById('result');
+                        resultElement.style.display = 'block';
+                        resultElement.innerHTML = '<div class="font35">恭喜获奖人</div><div>' + ret.join('</div><div>')+'</div>';
                         TagCanvas.Reload('myCanvas');
                         setTimeout(function(){
                             localStorage.setItem(new Date().toString(), JSON.stringify(ret));
-                            $('#main').addClass('mask');
+                            document.getElementById('main').classList.add('mask');
                         }, 300);
                     } else {
-                        $('#result').css('display', 'none');
-                        $('#main').removeClass('mask');
+                        const resultElement = document.getElementById('result');
+                        resultElement.style.display = 'none';
+                        document.getElementById('main').classList.remove('mask');
                         TagCanvas.SetSpeed('myCanvas', [5, 1]);
                     }
-                    this.running = !this.running;
-                },
-                toggleInputSection: function() {
-                    this.showInput = !this.showInput;           
-                },
-                confirmImport: function() {
+                    running.value = !running.value;
+                };
+
+                const toggleInputSection = function() {
+                    showInput.value = !showInput.value;           
+                };
+
+                const confirmImport = function() {
                     // Split the input data by new lines and then by commas
-                    let rows = this.inputData.trim().split('\n').map(row => row.split(','));
+                    let rows = inputData.value.trim().split('\n').map(row => row.split(','));
 
                     // Check if the first row is a header and remove it if necessary
                     if (rows[0][0].toLowerCase() === "name" && rows[0][1].toLowerCase() === "club") {
@@ -358,14 +365,30 @@
                     }
 
                     // Hide the input section
-                    this.showInput = false;
-                },
-                cancelImport: function() {
-                    this.showInput = false;  // Hide input section without changes
-                }
+                    showInput.value = false;
+                };
+
+                const cancelImport = function() {
+                    showInput.value = false;  // Hide input section without changes
+                };
+
+                return {
+                    selected,
+                    running,
+                    btns,
+                    showInput,
+                    inputData,
+                    reset,
+                    onClick,
+                    toggle,
+                    toggleInputSection,
+                    confirmImport,
+                    cancelImport
+                };
             }
         });
 
+        app.mount('#tools');
     })();
 </script>
 </body>
