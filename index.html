@@ -202,6 +202,9 @@
         
     </div>
     
+    <!-- 添加 result 元素 -->
+    <div id="result" class="result" style="display: none;"></div>
+    
     <div id="tools" class="tools">
         <button @click="toggleInputSection" class="pure-button button-secondary">导入成员数据</button>
         <button v-for="value in btns" @click="onClick(value)" class="hide"
@@ -340,26 +343,30 @@
                     },
 
                     toggle() {
+                        const resultElement = document.getElementById('result');
                         if (this.running) {
                             TagCanvas.SetSpeed('myCanvas', speed());
                             var ret = lottery(this.selected);
                             if (ret.length === 0) {
-                                const resultElement = document.getElementById('result');
-                                resultElement.style.display = 'block';
-                                resultElement.innerHTML = '<span>已抽完</span>';
+                                if (resultElement) {
+                                    resultElement.style.display = 'block';
+                                    resultElement.innerHTML = '<span>已抽完</span>';
+                                }
                                 return;
                             }
-                            const resultElement = document.getElementById('result');
-                            resultElement.style.display = 'block';
-                            resultElement.innerHTML = '<div class="font35">恭喜获奖人</div><div>' + ret.join('</div><div>') + '</div>';
+                            if (resultElement) {
+                                resultElement.style.display = 'block';
+                                resultElement.innerHTML = '<div class="font35">恭喜获奖人</div><div>' + ret.join('</div><div>') + '</div>';
+                            }
                             TagCanvas.Reload('myCanvas');
                             setTimeout(function () {
                                 localStorage.setItem(new Date().toString(), JSON.stringify(ret));
                                 document.getElementById('main').classList.add('mask');
                             }, 300);
                         } else {
-                            const resultElement = document.getElementById('result');
-                            resultElement.style.display = 'none';
+                            if (resultElement) {
+                                resultElement.style.display = 'none';
+                            }
                             document.getElementById('main').classList.remove('mask');
                             TagCanvas.SetSpeed('myCanvas', [5, 1]);
                         }
