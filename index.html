@@ -1,24 +1,30 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta name="screen-orientation" content="portrait">
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0"/>
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0" />
     <title>抽奖小程序</title>
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/wall.css">
     <style type="text/css">
-        body, html {
+        body,
+        html {
             width: 100%;
             height: 100%;
         }
+
         #data-input-section {
             margin: 20px auto;
             text-align: center;
         }
+
         .hide {
             display: none;
         }
+
         .result {
             position: absolute;
             top: 50%;
@@ -35,6 +41,7 @@
             color: #eeeeee !important;
             line-height: 30px !important;
         }
+
         .result div {
             margin: auto;
             display: inherit;
@@ -45,22 +52,35 @@
             color: #fff;
             padding: 10px 0;
         }
-        button, input, optgroup, select, textarea {
+
+        button,
+        input,
+        optgroup,
+        select,
+        textarea {
             color: inherit;
             font: inherit;
             margin: 0;
             border: none;
         }
+
         button {
             overflow: visible;
         }
-        button, select {
+
+        button,
+        select {
             text-transform: none;
         }
-        button, html input[type=button], input[type=reset], input[type=submit] {
+
+        button,
+        html input[type=button],
+        input[type=reset],
+        input[type=submit] {
             -webkit-appearance: button;
             cursor: pointer;
         }
+
         .pure-button {
             display: inline-block;
             zoom: 1;
@@ -78,77 +98,95 @@
             -moz-box-sizing: border-box;
             box-sizing: border-box;
         }
+
         .pure-button {
             font-family: inherit;
             font-size: 100%;
             padding: .5em 1em;
             color: #444;
-            color: rgba(0,0,0,.8);
-            border: 0 rgba(0,0,0,0);
+            color: rgba(0, 0, 0, .8);
+            border: 0 rgba(0, 0, 0, 0);
             background-color: #E6E6E6;
             text-decoration: none;
             border-radius: 2px;
         }
+
         .pure-button:focus {
             outline: 0
         }
-        .pure-button-hover, .pure-button:hover, .pure-button:focus {
+
+        .pure-button-hover,
+        .pure-button:hover,
+        .pure-button:focus {
             filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#1a000000', GradientType=0);
-            background-image: -webkit-gradient(linear,0 0,0 100%,from(transparent),color-stop(40%,rgba(0,0,0,.05)),to(rgba(0,0,0,.1)));
-            background-image: -webkit-linear-gradient(transparent,rgba(0,0,0,.05) 40%,rgba(0,0,0,.1));
-            background-image: -moz-linear-gradient(top,rgba(0,0,0,.05) 0,rgba(0,0,0,.1));
-            background-image: -o-linear-gradient(transparent,rgba(0,0,0,.05) 40%,rgba(0,0,0,.1));
-            background-image: linear-gradient(transparent,rgba(0,0,0,.05) 40%,rgba(0,0,0,.1));
+            background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent), color-stop(40%, rgba(0, 0, 0, .05)), to(rgba(0, 0, 0, .1)));
+            background-image: -webkit-linear-gradient(transparent, rgba(0, 0, 0, .05) 40%, rgba(0, 0, 0, .1));
+            background-image: -moz-linear-gradient(top, rgba(0, 0, 0, .05) 0, rgba(0, 0, 0, .1));
+            background-image: -o-linear-gradient(transparent, rgba(0, 0, 0, .05) 40%, rgba(0, 0, 0, .1));
+            background-image: linear-gradient(transparent, rgba(0, 0, 0, .05) 40%, rgba(0, 0, 0, .1));
         }
 
-        .button-success, .button-error, .button-warning, .button-secondary {
+        .button-success,
+        .button-error,
+        .button-warning,
+        .button-secondary {
             color: white;
             border-radius: 4px;
             text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
         }
+
         .button-success {
             background: #3B86FF;
             color: white;
             font-weight: bolder;
         }
+
         .button-error {
             background: rgb(202, 60, 60);
         }
+
         .button-warning {
             background: #000;
             color: white;
             font-weight: bolder;
         }
+
         .button-secondary {
             background: #FFB43B;
             color: white;
             font-weight: bolder;
         }
+
         .tools {
             position: absolute;
             bottom: 43px;
             margin-left: calc(50% - 200px);
         }
+
         .tools .pure-button {
             display: inline-block;
             margin: 5px;
             padding: 10px 0;
             text-align: center;
-            width:200px;
+            width: 200px;
             border: 3px solid white;
 
         }
+
         .hide {
             display: none !important;
         }
+
         .mask {
-            -webkit-filter:blur(5px);
-            filter:blur(5px);
+            -webkit-filter: blur(5px);
+            filter: blur(5px);
         }
+
         #main {
             -webkit-transition: all 1s;
             transition: all 1s;
         }
+
         .result-btn {
             margin-top: 20px;
             text-align: right;
@@ -158,133 +196,127 @@
         }
     </style>
 </head>
+
 <body>
-<div id="main" class="wall">
-    <div class="result-btn">
-       <a href="./result.html" target="_blank"></a>
+    <div id="main" class="wall">
+        
     </div>
-</div>
-<div id="result" class="result">
-
-</div>
-<div id="tools" class="tools">
-    <button @click="toggleInputSection" class="pure-button button-secondary">导入成员数据</button>
-    <button
-    v-for="value in btns"
-    @click="onClick(value)"
-    class="hide"
-    :class="{ 'button-error': selected == value}"
-    >{{value}}</button>
-    <button
-       class="pure-button start-button"
-       @click="toggle"
-       :class="{'button-secondary': !running,
+    
+    <div id="tools" class="tools">
+        <button @click="toggleInputSection" class="pure-button button-secondary">导入成员数据</button>
+        <button v-for="value in btns" @click="onClick(value)" class="hide"
+            :class="{ 'button-error': selected == value}">{{value}}</button>
+        <button class="pure-button start-button" @click="toggle" :class="{'button-secondary': !running,
                'button-success': running}">{{running?'停!':'马上抽奖'}}</button>
-    <button class="pure-button button-warning" @click="reset">重置</button>
-    <div id="data-input-section" v-show="showInput">
-        <textarea v-model="inputData" rows="10" cols="50" placeholder="Paste your comma-separated data here"></textarea>
-        <br>
-        <button @click="confirmImport" class="pure-button button-success">确定</button>
-        <button @click="cancelImport" class="pure-button button-error">放弃</button>
+        <button class="pure-button button-warning" @click="reset">重置</button>
+        <button @click="displayResults" class="pure-button button-secondary">显示抽奖结果</button>
+        <div id="data-input-section" v-show="showInput">
+            <textarea v-model="inputData" rows="10" cols="50"
+                placeholder="Paste your comma-separated data here"></textarea>
+            <br>
+            <button @click="confirmImport" class="pure-button button-success">确定</button>
+            <button @click="cancelImport" class="pure-button button-error">放弃</button>
+        </div>
     </div>
-</div>
-<script type="text/javascript" src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-<script type="text/javascript" src="js/tagcanvas.js"></script>
-<script type="text/javascript">
-    (function(){
-        member=[]
-        var choosed = JSON.parse(localStorage.getItem('choosed')) || {};
-        console.log(choosed);
-        var getClubDict = function(jsonArray) {
-            var dictionary = {};
-            for (var i = 0; i < jsonArray.length; i++) {
-                var club = jsonArray[i].club;
-                dictionary[club] = 0;
-            }
-            return dictionary;
-        }
-        var clubDict = getClubDict(member);
-        var getMiniClub = function(dictionary) {
-            var minValue = Infinity;
-            var minClub = '';
-
-            for (var key in dictionary) {
-                if (dictionary.hasOwnProperty(key)) {
-                var value = dictionary[key];
-                if (value < minValue) {
-                    minValue = value;
-                    minClub = key;
+    <script type="text/javascript" src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script type="text/javascript" src="js/tagcanvas.js"></script>
+    <script type="text/javascript">
+        (function () {
+            member = []
+            var choosed = JSON.parse(localStorage.getItem('choosed')) || {};
+            console.log(choosed);
+            var getClubDict = function (jsonArray) {
+                var dictionary = {};
+                for (var i = 0; i < jsonArray.length; i++) {
+                    var club = jsonArray[i].club;
+                    dictionary[club] = 0;
                 }
-                }
+                return dictionary;
             }
+            var clubDict = getClubDict(member);
+            var getMiniClub = function (dictionary) {
+                var minValue = Infinity;
+                var minClub = '';
 
-            return minClub;
-        }
-        console.log(clubDict);
-        var speed = function(){
-            return [0.1 * Math.random() + 0.01, -(0.1 * Math.random() + 0.01)];
-        };
-        var getKey = function(item){
-            return item.name + '-' + item.club;
-        };
-        var createHTML = function(){
-            var html = [ '<ul>' ];
-            member.forEach(function(item, index){
-                item.index = index;
-                var key = getKey(item);
-                var color = 'blue';    /* colors assigned to names */
-                html.push('<li><a href="#" style="color: ' + color + ';">' + item.name + '</a></li>');
-            });
-            html.push('</ul>');
-            return html.join('');
-        };
-        var lottery = function(count){
-            var list = canvas.getElementsByTagName('a');
-            var color = 'gray';   /* color for names that have already been selected */
-            var miniClub = getMiniClub(clubDict);
-            var ret = member
-                .filter(function(m, index){
-                    m.index = index;
-                    return !choosed[getKey(m)];
-                })
-                .filter(function(m, index){
-                    m.index = index;
-                    console.log(m.club, miniClub, m.club==miniClub)
-                    return m.club==miniClub;
-                })
-                .map(function(m){
-                    return Object.assign({
-                      score: Math.random()
-                    }, m);
-                })
-                .sort(function(a, b){
-                    return a.score - b.score;
-                })
-                .slice(0, count)
-                .map(function(m){
-                  choosed[getKey(m)] = m.club;
-                  clubDict[m.club] += 1;
-                  list[m.index].style.color = color;
-                  return m.name + '<br/>' + m.club; 
+                for (var key in dictionary) {
+                    if (dictionary.hasOwnProperty(key)) {
+                        var value = dictionary[key];
+                        if (value < minValue) {
+                            minValue = value;
+                            minClub = key;
+                        }
+                    }
+                }
+
+                return minClub;
+            }
+            console.log(clubDict);
+            var speed = function () {
+                return [0.1 * Math.random() + 0.01, -(0.1 * Math.random() + 0.01)];
+            };
+            var getKey = function (item) {
+                return item.name + '-' + item.club;
+            };
+            var createHTML = function () {
+                var html = ['<ul>'];
+                member.forEach(function (item, index) {
+                    item.index = index;
+                    var key = getKey(item);
+                    var color = 'blue';    /* colors assigned to names */
+                    html.push('<li><a href="#" style="color: ' + color + ';">' + item.name + '</a></li>');
                 });
-            console.log(ret);
-            localStorage.setItem('choosed', JSON.stringify(choosed));
-            return ret;
-        };
-        var canvas = document.createElement('canvas');
-        canvas.id = 'myCanvas';
-        canvas.width =  0.8 * document.body.offsetWidth ;
-        canvas.height = 0.8 * document.body.offsetHeight ;
-        document.getElementById('main').appendChild(canvas);
-        const app = Vue.createApp({
-            setup() {
-                const selected = Vue.ref(1);
-                const running = Vue.ref(false);
-                const btns = Vue.ref([30, 10, 5, 2, 1]);
-                const showInput = Vue.ref(false);  // Control visibility of the input section
-                const inputData = Vue.ref('');      // Store the pasted data
-
-                Vue.onMounted(() => {
+                html.push('</ul>');
+                return html.join('');
+            };
+            var lottery = function (count) {
+                var list = canvas.getElementsByTagName('a');
+                var color = 'gray';   /* color for names that have already been selected */
+                var miniClub = getMiniClub(clubDict);
+                var ret = member
+                    .filter(function (m, index) {
+                        m.index = index;
+                        return !choosed[getKey(m)];
+                    })
+                    .filter(function (m, index) {
+                        m.index = index;
+                        console.log(m.club, miniClub, m.club == miniClub)
+                        return m.club == miniClub;
+                    })
+                    .map(function (m) {
+                        return Object.assign({
+                            score: Math.random()
+                        }, m);
+                    })
+                    .sort(function (a, b) {
+                        return a.score - b.score;
+                    })
+                    .slice(0, count)
+                    .map(function (m) {
+                        choosed[getKey(m)] = m.club;
+                        clubDict[m.club] += 1;
+                        list[m.index].style.color = color;
+                        return m.name + '<br/>' + m.club;
+                    });
+                console.log(ret);
+                localStorage.setItem('choosed', JSON.stringify(choosed));
+                return ret;
+            };
+            var canvas = document.createElement('canvas');
+            canvas.id = 'myCanvas';
+            canvas.width = 0.8 * document.body.offsetWidth;
+            canvas.height = 0.8 * document.body.offsetHeight;
+            document.getElementById('main').appendChild(canvas);
+            const app = Vue.createApp({
+                data() {
+                    return {
+                        selected: 1,
+                        running: false,
+                        btns: [30, 10, 5, 2, 1],
+                        showInput: false,
+                        inputData: ''
+                    }
+                },
+                mounted() {
                     canvas.innerHTML = createHTML();
                     TagCanvas.Start('myCanvas', '', {
                         textColour: null,
@@ -292,104 +324,111 @@
                         dragControl: 1,
                         textHeight: 18
                     });
-                });
+                },
+                methods: {
+                    reset() {
+                        if (confirm('确定要重置么？所有之前的抽奖历史将被清除！')) {
+                            localStorage.clear();
+                            location.reload(true);
+                        }
+                    },
 
-                const reset = function(){
-                    if(confirm('确定要重置么？所有之前的抽奖历史将被清除！')){
-                        localStorage.clear();
-                        location.reload(true);
-                    }
-                };
+                    onClick(num) {
+                        document.getElementById('result').style.display = 'none';
+                        document.getElementById('main').classList.remove('mask');
+                        this.selected = num;
+                    },
 
-                const onClick = function(num){
-                    document.getElementById('result').style.display = 'none';
-                    document.getElementById('main').classList.remove('mask');
-                    selected.value = num;
-                };
-
-                const toggle = function(){
-                    if(running.value){
-                        TagCanvas.SetSpeed('myCanvas', speed());
-                        var ret = lottery(selected.value);                        
-                        if (ret.length === 0) {
+                    toggle() {
+                        if (this.running) {
+                            TagCanvas.SetSpeed('myCanvas', speed());
+                            var ret = lottery(this.selected);
+                            if (ret.length === 0) {
+                                const resultElement = document.getElementById('result');
+                                resultElement.style.display = 'block';
+                                resultElement.innerHTML = '<span>已抽完</span>';
+                                return;
+                            }
                             const resultElement = document.getElementById('result');
                             resultElement.style.display = 'block';
-                            resultElement.innerHTML = '<span>已抽完</span>';
-                            return;
+                            resultElement.innerHTML = '<div class="font35">恭喜获奖人</div><div>' + ret.join('</div><div>') + '</div>';
+                            TagCanvas.Reload('myCanvas');
+                            setTimeout(function () {
+                                localStorage.setItem(new Date().toString(), JSON.stringify(ret));
+                                document.getElementById('main').classList.add('mask');
+                            }, 300);
+                        } else {
+                            const resultElement = document.getElementById('result');
+                            resultElement.style.display = 'none';
+                            document.getElementById('main').classList.remove('mask');
+                            TagCanvas.SetSpeed('myCanvas', [5, 1]);
                         }
-                        const resultElement = document.getElementById('result');
-                        resultElement.style.display = 'block';
-                        resultElement.innerHTML = '<div class="font35">恭喜获奖人</div><div>' + ret.join('</div><div>')+'</div>';
-                        TagCanvas.Reload('myCanvas');
-                        setTimeout(function(){
-                            localStorage.setItem(new Date().toString(), JSON.stringify(ret));
-                            document.getElementById('main').classList.add('mask');
-                        }, 300);
-                    } else {
-                        const resultElement = document.getElementById('result');
-                        resultElement.style.display = 'none';
-                        document.getElementById('main').classList.remove('mask');
-                        TagCanvas.SetSpeed('myCanvas', [5, 1]);
+                        this.running = !this.running;
+                    },
+
+                    toggleInputSection() {
+                        this.showInput = !this.showInput;
+                    },
+
+                    confirmImport() {
+                        // Split the input data by new lines and then by commas
+                        let rows = this.inputData.trim().split('\n').map(row => row.split(','));
+
+                        // Check if the first row is a header and remove it if necessary
+                        if (rows[0][0].toLowerCase() === "name" && rows[0][1].toLowerCase() === "club") {
+                            rows.shift();  // Skip the header row
+                        }
+
+                        // Convert the rows into an array of objects for members
+                        let newMembers = rows.map(function (row) {
+                            return { name: row[0].trim(), club: row[1].trim() };
+                        });
+
+                        if (newMembers.length > 0) {
+                            // Update the global `member` array with the new data
+                            window.member = newMembers;
+
+                            // Update the club dictionary as well
+                            clubDict = getClubDict(newMembers);
+
+                            // Recreate the HTML and update the canvas without reloading
+                            document.getElementById('myCanvas').innerHTML = createHTML();
+                            TagCanvas.Reload('myCanvas');
+                        }
+
+                        // Hide the input section
+                        this.showInput = false;
+                    },
+
+                    cancelImport() {
+                        this.showInput = false;  // Hide input section without changes
+                    },
+
+                    // 修改后的显示结果方法
+                    displayResults() {
+                        let allWinners = [];
+                        for (let i = 0; i < localStorage.length; i++) {
+                            let key = localStorage.key(i);
+                            if (key !== 'choosed' && key !== 'originalMemberData') {
+                                let winners = JSON.parse(localStorage.getItem(key));
+                                allWinners = allWinners.concat(winners);
+                            }
+                        }
+
+                        // 使用 alert 显示结果，不包含时间
+                        let message = '抽奖结果：\n\n';
+                        allWinners.forEach(winner => {
+                            let cleanWinner = winner.replace(/<br\s*\/?>/gi, ' ').trim();
+                            message += cleanWinner + '\n';
+                        });
+                        alert(message);
                     }
-                    running.value = !running.value;
-                };
+                }
+            });
 
-                const toggleInputSection = function() {
-                    showInput.value = !showInput.value;           
-                };
-
-                const confirmImport = function() {
-                    // Split the input data by new lines and then by commas
-                    let rows = inputData.value.trim().split('\n').map(row => row.split(','));
-
-                    // Check if the first row is a header and remove it if necessary
-                    if (rows[0][0].toLowerCase() === "name" && rows[0][1].toLowerCase() === "club") {
-                        rows.shift();  // Skip the header row
-                    }
-
-                    // Convert the rows into an array of objects for members
-                    let newMembers = rows.map(function(row) {
-                        return { name: row[0].trim(), club: row[1].trim() };
-                    });
-
-                    if (newMembers.length > 0) {
-                        // Update the global `member` array with the new data
-                        window.member = newMembers;
-
-                        // Update the club dictionary as well
-                        clubDict = getClubDict(newMembers);
-
-                        // Recreate the HTML and update the canvas without reloading
-                        document.getElementById('myCanvas').innerHTML = createHTML();
-                        TagCanvas.Reload('myCanvas');
-                    }
-
-                    // Hide the input section
-                    showInput.value = false;
-                };
-
-                const cancelImport = function() {
-                    showInput.value = false;  // Hide input section without changes
-                };
-
-                return {
-                    selected,
-                    running,
-                    btns,
-                    showInput,
-                    inputData,
-                    reset,
-                    onClick,
-                    toggle,
-                    toggleInputSection,
-                    confirmImport,
-                    cancelImport
-                };
-            }
-        });
-
-        app.mount('#tools');
-    })();
-</script>
+            app.mount('#tools');
+        })();
+    </script>
 </body>
+
 </html>
